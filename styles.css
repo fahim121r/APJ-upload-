@@ -33,3 +33,12 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.progress {
+    height: 20px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    transition: width 0.3s ease;
+}
