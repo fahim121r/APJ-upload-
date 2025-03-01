@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="APK ফাইল আপলোড এবং শেয়ার করুন। SEO অপ্টিমাইজড ওয়েবসাইট Google AdSense ইন্টিগ্রেশন সহ।">
+    <meta name="keywords" content="APK আপলোড, APK শেয়ার, APK হোস্টিং, Google AdSense, SEO অপ্টিমাইজড">
+    <meta name="author" content="আপনার নাম">
+    <title>APK আপলোড - আপনার APK শেয়ার করুন</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">APK আপলোড</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#upload">APK আপলোড</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">আমাদের সম্পর্কে</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">যোগাযোগ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <section id="upload" class="mb-5">
+            <h2 class="text-center mb-4">আপনার APK আপলোড করুন</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <form id="uploadForm" action="upload.php" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="apkFile">APK ফাইল</label>
+                            <input type="file" class="form-control-file" id="apkFile" name="apkFile" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apkName">APK এর নাম</label>
+                            <input type="text" class="form-control" id="apkName" name="apkName" placeholder="APK এর নাম" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apkDescription">APK এর বিবরণ</label>
+                            <textarea class="form-control" id="apkDescription" name="apkDescription" rows="3" placeholder="APK এর বিবরণ" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">APK আপলোড</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="ads" class="mb-5">
+            <h2 class="text-center mb-4">বিজ্ঞাপন</h2>
+            <!-- Google AdSense Ad Unit -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_AD_SENSE_ID"
+                    crossorigin="anonymous"></script>
+            <!-- Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_AD_SENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+
+        <section id="about" class="mb-5">
+            <h2 class="text-center mb-4">আমাদের সম্পর্কে</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <p class="text-center">আমরা ব্যবহারকারীদের জন্য একটি প্ল্যাটফর্ম প্রদান করি যেখানে তারা সহজেই তাদের APK ফাইল আপলোড এবং শেয়ার করতে পারে। আমাদের সাইটটি SEO অপ্টিমাইজড এবং Google AdSense এর সাথে ইন্টিগ্রেটেড।</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="text-center mb-4">যোগাযোগ</h2>
+            <div class="card shadow">
+                <div class="card-body">
+                    <p class="text-center">আপনার কোন প্রশ্ন থাকলে, আমাদের সাথে <a href="mailto:contact@apkupload.com">যোগাযোগ</a> করতে পারেন।</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; ২০২৩ APK আপলোড। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
